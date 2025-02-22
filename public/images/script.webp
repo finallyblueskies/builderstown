@@ -1,0 +1,51 @@
+const fs = require("fs");
+const path = require("path");
+
+// Use the directory passed as a command line argument or default to the current directory.
+const dir = process.argv[2] || ".";
+
+// Read all entries in the directory.
+fs.readdir(dir, (err, files) => {
+  if (err) {
+    console.error(`Error reading directory: ${err}`);
+    process.exit(1);
+  }
+
+  files.forEach((file) => {
+    const fullPath = path.join(dir, file);
+
+    // Get file stats to ensure we process only files.
+    fs.stat(fullPath, (err, stats) => {
+      if (err) {
+        console.error(`Error stating file ${file}: ${err}`);
+        return;
+      }
+
+      if (stats.isFile()) {
+        // Check if the filename exactly matches the pattern:
+        // one or more non-dot characters, a single dot, then "webp" (case-insensitive)
+        if (!/^[^.]+\.webp$/i.test(file)) {
+          let baseName;
+          // If there's a dot, use the portion before the first dot; otherwise, use the whole name.
+          if (file.includes(".")) {
+            baseName = file.split(".")[0];
+          } else {
+            baseName = file;
+          }
+
+          const newFileName = `${baseName}.webp`;
+          const newFullPath = path.join(dir, newFileName);
+
+          // Rename the file.
+          fs.rename(fullPath, newFullPath, (err) => {
+            if (err) {
+              console.error(`Error renaming ${file} to ${newFileName}: ${err}`);
+            } else {
+              console.log(`Renamed ${file} to ${newFileName}`);
+            }
+          });
+        }
+      }
+    });
+  });
+});
