@@ -1,0 +1,59 @@
+
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "James Wilson",
+      "rating": 5,
+      "testimonial": "Exceptional work on our office renovation. The team's attention to detail and professionalism exceeded our expectations. They completed the project ahead of schedule and maintained excellent communication throughout the process."
+    },
+    {
+      "id": 2,
+      "name": "Sarah Thompson",
+      "rating": 5,
+      "testimonial": "We hired them for our home extension project and couldn't be happier with the results. Their expertise in managing complex architectural elements while maintaining the original character of our Victorian home was impressive."
+    },
+    {
+      "id": 3,
+      "name": "Michael Roberts",
+      "rating": 4,
+      "testimonial": "Very professional team that delivered our retail space renovation on time and within budget. Their experience with commercial projects really showed in the quality of work."
+    },
+    {
+      "id": 4,
+      "name": "Emma Davis",
+      "rating": 5,
+      "testimonial": "Outstanding service from start to finish. They transformed our outdated kitchen into a modern, functional space. The craftsmanship is excellent and their attention to detail is remarkable."
+    },
+    {
+      "id": 5,
+      "name": "David Brown",
+      "rating": 5,
+      "testimonial": "Fantastic experience working with this team on our restaurant renovation. They understood our vision perfectly and executed it flawlessly, while keeping disruption to a minimum."
+    },
+    {
+      "id": 6,
+      "name": "Lisa Anderson",
+      "rating": 5,
+      "testimonial": "Highly professional and skilled team. They completed our office fit-out to an exceptional standard, working efficiently to meet our tight deadline."
+    },
+    {
+      "id": 7,
+      "name": "Robert Taylor",
+      "rating": 4,
+      "testimonial": "Great work on our house renovation. The team was always punctual, professional, and kept the site clean and organized throughout the project."
+    },
+    {
+      "id": 8,
+      "rating": 5,
+      "name": "Catherine White",
+      "testimonial": "Exceptional service and craftsmanship. They transformed our basement into a beautiful living space, handling all the complexities of underground construction expertly."
+    },
+    {
+      "id": 9,
+      "rating": 5,
+      "name": "John Mitchell",
+      "testimonial": "Outstanding work on our commercial property renovation. Their expertise in working with heritage buildings while incorporating modern elements was impressive."
+    }
+  ]
+}
