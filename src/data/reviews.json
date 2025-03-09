@@ -1,59 +1,154 @@
-
 {
   "reviews": [
     {
       "id": 1,
-      "name": "James Wilson",
+      "name": "Firyal Aladhamy",
       "rating": 5,
-      "testimonial": "Exceptional work on our office renovation. The team's attention to detail and professionalism exceeded our expectations. They completed the project ahead of schedule and maintained excellent communication throughout the process."
+      "testimonial": "So far so good, they will finish the job hopefully tomorrow. Today the job completed and i am very pleased about the way they handled the job, i would recommend them without hesitation.",
+      "source": "MyBuilder",
+      "date": "2 Oct 2024",
+      "location": "West Kensington, London",
+      "response": "Thank you for the kind words, it was a pleasure to work with you"
     },
     {
       "id": 2,
-      "name": "Sarah Thompson",
+      "name": "MyBuilder user",
       "rating": 5,
-      "testimonial": "We hired them for our home extension project and couldn't be happier with the results. Their expertise in managing complex architectural elements while maintaining the original character of our Victorian home was impressive."
+      "testimonial": "Vasyl was brilliant, very reliable and punctual, good quality work, he was very flexible and always happy to find solutions to all problems, highly recommended",
+      "source": "MyBuilder",
+      "date": "21 Oct 2024",
+      "location": "Greenwich, London",
+      "response": "Thanks for your feedback! It was lovely working with you"
     },
     {
       "id": 3,
-      "name": "Michael Roberts",
-      "rating": 4,
-      "testimonial": "Very professional team that delivered our retail space renovation on time and within budget. Their experience with commercial projects really showed in the quality of work."
+      "name": "patricia55640",
+      "rating": 5,
+      "testimonial": "Reliable and fast work on a number of handyman jobs.",
+      "source": "MyBuilder",
+      "date": "14 Jan 2021",
+      "location": "Rotherhithe, London",
+      "response": "Thanks for your feedback!"
     },
     {
       "id": 4,
-      "name": "Emma Davis",
+      "name": "sarahb_36",
       "rating": 5,
-      "testimonial": "Outstanding service from start to finish. They transformed our outdated kitchen into a modern, functional space. The craftsmanship is excellent and their attention to detail is remarkable."
+      "testimonial": "Vasyl was a great communicator – I'm the landlord for the property where the job took place but he kept me informed and helpfully agreed to collect tiles and keys from my home. He came to take a look at the job, provided helpful advice and I'm pleased with the work undertaken. Would definitely use again.",
+      "source": "MyBuilder",
+      "date": "18 Sep 2020",
+      "location": "Clapton, London",
+      "response": "Thank you for trusting us with your property. We're always happy to go the extra mile!"
     },
     {
       "id": 5,
-      "name": "David Brown",
+      "name": "daninclapham",
       "rating": 5,
-      "testimonial": "Fantastic experience working with this team on our restaurant renovation. They understood our vision perfectly and executed it flawlessly, while keeping disruption to a minimum."
+      "testimonial": "Vasyl was very professional and did an excellent job. He gave good advice, a detailed quotation and realistic timeframe for the job to be completed. He is hardworking and has good attention to detail. I am very satisfied with the job and would highly recommend.",
+      "source": "MyBuilder",
+      "date": "18 Jul 2020",
+      "location": "Clapham, London",
+      "response": "We appreciate your kind review. Attention to detail is always our priority!"
     },
     {
       "id": 6,
-      "name": "Lisa Anderson",
+      "name": "deborah1963",
       "rating": 5,
-      "testimonial": "Highly professional and skilled team. They completed our office fit-out to an exceptional standard, working efficiently to meet our tight deadline."
+      "testimonial": "Arrived on time good job left the room tidy",
+      "source": "MyBuilder",
+      "date": "12 Jun 2020",
+      "location": "Clerkenwell, London",
+      "response": "Thanks Deborah! We always aim to leave spaces cleaner than we found them."
     },
     {
       "id": 7,
-      "name": "Robert Taylor",
-      "rating": 4,
-      "testimonial": "Great work on our house renovation. The team was always punctual, professional, and kept the site clean and organized throughout the project."
+      "name": "andrea_corsi",
+      "rating": 5,
+      "testimonial": "Vasyl quoted a good price, came early and did the job just right. I would recommend and we might call him again for other small issues that we have with our floors.",
+      "source": "MyBuilder",
+      "date": "2 Jun 2020",
+      "location": "New Cross, London",
+      "response": "Thank you Andrea! We'd be happy to help with your floors anytime."
     },
     {
       "id": 8,
+      "name": "alexandrajackson",
       "rating": 5,
-      "name": "Catherine White",
-      "testimonial": "Exceptional service and craftsmanship. They transformed our basement into a beautiful living space, handling all the complexities of underground construction expertly."
+      "testimonial": "Amazing work and quality from Vasyl and his team. He went out of his way to work to our requirements and even came back numerous times to finish off when we had to stall the job. A pleasure to work with. Would highly recommend.",
+      "source": "MyBuilder",
+      "date": "27 Aug 2019",
+      "location": "Forest Gate, London",
+      "response": "We really appreciate your patience with the project. It was worth the extra visits to get everything just right!"
     },
     {
       "id": 9,
+      "name": "rea31286",
       "rating": 5,
-      "name": "John Mitchell",
-      "testimonial": "Outstanding work on our commercial property renovation. Their expertise in working with heritage buildings while incorporating modern elements was impressive."
+      "testimonial": "Vasyl and the team were great and I love my new bathroom. I had a design planned and supplies reserved and needed the installation. Team worked very closely with me in order to make some improvement and were great finding the solutions. The noise and the mess was kept to minimun and did not have any difficulty working from home while work as conducted. The critical items; work done to the budget, time and quality were all met.",
+      "source": "MyBuilder",
+      "date": "18 Mar 2019",
+      "location": "Southwark, London",
+      "response": "Thank you for the detailed feedback! Bathroom renovations are our specialty, and we're glad we could make it a smooth process."
+    },
+    {
+      "id": 10,
+      "name": "MyBuilder user",
+      "rating": 4,
+      "testimonial": "Bathroom refurbishment",
+      "source": "MyBuilder",
+      "date": "4 Nov 2024",
+      "location": "Shadwell, London",
+      "response": "Thanks for your review. We hope you're enjoying your new bathroom!"
+    },
+    {
+      "id": 11,
+      "name": "ca26rl",
+      "rating": 5,
+      "testimonial": "Thanks for the work. Had good tools",
+      "source": "MyBuilder",
+      "date": "12 Aug 2022",
+      "location": "Dalston, London",
+      "response": "We appreciate the feedback! The right tools make all the difference."
+    },
+    {
+      "id": 12,
+      "name": "kellylou123",
+      "rating": 1,
+      "testimonial": "Unfortunately Vasyl misjudged the job and it was out of his capabilities. He made a few mistakes including damaging my bath which he lied about. Whilst accidents happen, dishonesty is not acceptable. He claimed it wasn't him (even though he tried to glue it back) by saying he didn't have glue and it couldn't have been him - I then found the glue on the side. On this basis I wouldn't recommend.",
+      "source": "MyBuilder",
+      "date": "5 Aug 2021",
+      "location": "Peckham, London",
+      "response": "Thank you for your feedback, and I'm sorry that the service did not meet your expectations. I always try to provide good quality work and stay in touch with clients, so I'm sad to hear this situation has made you feel different. I remember the job well and don't recall damaging the bath or encountering issues with you around this. I also would never repair anything without talking to you first. Honesty is very important to me in all my work, so maybe there was a miscommunication with me or someone I worked with. I've had the pleasure of working with many clients over the years, and I deeply value the trust they've placed in me."
+    },
+    {
+      "id": 13,
+      "name": "John Smith",
+      "rating": 5,
+      "testimonial": "The team did a floor replacement, bathroom panel replacement, wall painting and broken double glazed window replacement at my property. The job was turned around quickly and the communication was great. I received progress update daily and the quality and workmanship were excellent.",
+      "source": "Google",
+      "date": "19 Dec 2024",
+      "location": "Islington, London",
+      "response": "Thank you for your kind review! We pride ourselves on clear communication and quality workmanship. It was a pleasure working on your property."
+    },
+    {
+      "id": 14,
+      "name": "Elena Malkova",
+      "rating": 5,
+      "testimonial": "Vasyl's team did a big renovation project in my apartment, including wooden floor installation and wall painting, as well as several minor fixes (replacing taps, repairing fixtures, and a few other small tasks). I am very satisfied with the results and would definitely recommend their services to anyone looking for quality renovation work.",
+      "source": "Google",
+      "date": "1 Nov 2024",
+      "location": "Camden, London",
+      "response": "Thank you Elena! We're delighted that you're happy with your apartment renovation. We enjoyed working on both the major aspects and the smaller details to make everything perfect."
+    },
+    {
+      "id": 15,
+      "name": "Alex Matviyenkov",
+      "rating": 5,
+      "testimonial": "Thank you for the great job! Everything is clear and fast, neat! Everything was considered, they arrived on time, and they did it quickly! We will definitely come back and recommend to our friends! Thanks again!",
+      "source": "Google",
+      "date": "2 Jan 2025",
+      "location": "Hammersmith, London",
+      "response": "We appreciate your enthusiastic feedback, Alex! Punctuality and neatness are values we take seriously. We look forward to working with you again in the future!"
     }
   ]
 }

@@ -1,4 +1,3 @@
-
 import { Star } from "lucide-react";
 import {
   Dialog,
@@ -12,9 +11,21 @@ interface ReviewItemProps {
   name: string;
   rating: number;
   testimonial: string;
+  response?: string;
+  source?: string;
+  date?: string;
+  location?: string;
 }
 
-export const ReviewItem = ({ name, rating, testimonial }: ReviewItemProps) => {
+export const ReviewItem = ({
+  name,
+  rating,
+  testimonial,
+  response,
+  source,
+  date,
+  location,
+}: ReviewItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -39,7 +50,7 @@ export const ReviewItem = ({ name, rating, testimonial }: ReviewItemProps) => {
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>
             <DialogTitle className="flex items-center gap-2">
               <span>{name}</span>
@@ -53,8 +64,26 @@ export const ReviewItem = ({ name, rating, testimonial }: ReviewItemProps) => {
                 ))}
               </div>
             </DialogTitle>
+            {(source || date || location) && (
+              <div className="text-sm text-gray-500 mt-1">
+                {source && <span>{source}</span>}
+                {date && <span> • {date}</span>}
+                {location && <span> • {location}</span>}
+              </div>
+            )}
           </DialogHeader>
-          <p className="text-gray-600">{testimonial}</p>
+          <div className="space-y-4">
+            <p className="text-gray-600">{testimonial}</p>
+
+            {response && (
+              <div className="mt-4 bg-gray-50 p-4 rounded-md border-l-4 border-theme">
+                <h4 className="font-medium text-gray-900 mb-2">
+                  Our Response:
+                </h4>
+                <p className="text-gray-600 text-sm">{response}</p>
+              </div>
+            )}
+          </div>
         </DialogContent>
       </Dialog>
     </>

@@ -1,0 +1,118 @@
+.inline-gallery-container {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+/* Thumbnail styles */
+.lg-thumb-item {
+  width: 100px !important;
+  height: 100px !important;
+  margin-right: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lg-thumb-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Caption animations */
+.lightGallery-captions h4 {
+  transform: translate3d(60px, 0, 0px);
+}
+
+.lightGallery-captions p {
+  transform: translate3d(-60px, 0, 0px);
+}
+
+.lightGallery-captions h4,
+.lightGallery-captions p {
+  opacity: 0;
+}
+
+.lg-current .lightGallery-captions h4,
+.lg-current .lightGallery-captions p {
+  transform: translate3d(0, 0, 0px);
+  opacity: 1;
+}
+
+.lg-slide-progress .lightGallery-captions h4 {
+  transform: translate3d(-60px, 0, 0px);
+}
+
+.lg-slide-progress .lightGallery-captions p {
+  transform: translate3d(60px, 0, 0px);
+}
+
+.lg-slide-progress .lightGallery-captions h4,
+.lg-slide-progress .lightGallery-captions p {
+  opacity: 0;
+}
+
+.lightGallery-captions h4,
+.lightGallery-captions p {
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in;
+}
+
+.lg-current .lightGallery-captions h4,
+.lg-current .lightGallery-captions p {
+  transition-delay: 500ms;
+}
+
+.lg-current.lg-slide-progress .lightGallery-captions h4,
+.lg-current.lg-slide-progress .lightGallery-captions p {
+  transition-delay: 0ms;
+}
+
+/* Custom gallery container styles */
+.custom-wrapper-class {
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.gallery-item {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover {
+  opacity: 0.9;
+}
+
+/* Additional gallery styles */
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.lg-toolbar,
+.lg-prev,
+.lg-next {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.lg-toolbar .lg-icon,
+.lg-prev:after,
+.lg-next:after {
+  color: #fff;
+}
+
+.lg-sub-html {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+}
+
+.lg-sub-html h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.lg-sub-html p {
+  color: #e5e5e5;
+  font-size: 1rem;
+  margin: 0;
+} 

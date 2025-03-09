@@ -1,76 +1,98 @@
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { setPageTitle } from "@/utils/title";
 
 const About = () => {
+  useEffect(() => {
+    setPageTitle("About Us");
+  }, []);
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12">About Us</h1>
-        
+
         <div className="prose prose-lg mx-auto">
           <p className="text-gray-600 mb-6">
-            Founded in 2003, London Construction Co. has established itself as a
-            leading force in London's construction industry. Our journey began with
-            a simple yet powerful vision: to deliver construction excellence while
-            maintaining the highest standards of quality and client satisfaction.
-          </p>
-          
-          <p className="text-gray-600 mb-6">
-            With over two decades of experience, we've successfully completed
-            hundreds of projects across London, ranging from historical building
-            renovations to modern office complexes. Our team of skilled
-            professionals brings expertise, dedication, and attention to detail to
-            every project we undertake.
+            Established in 2003, we're a small construction team serving London
+            and surrounding areas. We focus on handywork, renovations, and
+            repairs that are cost-effective and reliable.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-6">Our Values</h2>
-          
+          <p className="text-gray-600 mb-6">
+            Our team has completed numerous renovation projects across London.
+            We're known for clear communication, sticking to budgets, and
+            delivering quality work without the fuss.
+          </p>
+
+          <div className="my-8 text-center">
+            <Link
+              to="/contact"
+              className="bg-theme hover:bg-theme-dark text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+            >
+              Get Your Free Estimate Today
+            </Link>
+          </div>
+
+          <h2 className="text-2xl font-semibold mt-12 mb-6">What We Value</h2>
+
           <div className="grid gap-6 md:grid-cols-2">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">Quality</h3>
+              <h3 className="text-xl font-semibold mb-3">Quality Work</h3>
               <p className="text-gray-600">
-                We never compromise on the quality of our work, using only the
-                finest materials and latest construction techniques.
+                We use good materials and proper techniques to ensure lasting
+                results.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">Innovation</h3>
+              <h3 className="text-xl font-semibold mb-3">Cost Effectiveness</h3>
               <p className="text-gray-600">
-                We stay at the forefront of construction technology and sustainable
-                building practices.
+                We provide competitive pricing and help you get the most value
+                for your budget.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">Integrity</h3>
+              <h3 className="text-xl font-semibold mb-3">
+                Clear Communication
+              </h3>
               <p className="text-gray-600">
-                We maintain transparent communication and honest relationships with
-                all our clients.
+                We keep you informed throughout the project with straightforward
+                updates.
               </p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-3">Reliability</h3>
               <p className="text-gray-600">
-                We deliver projects on time and within budget, maintaining the
-                highest standards throughout.
+                We show up on time, follow through on commitments, and meet
+                deadlines.
               </p>
             </div>
           </div>
 
-          <h2 className="text-2xl font-semibold mt-12 mb-6">Our Expertise</h2>
-          
-          <p className="text-gray-600 mb-6">
-            We specialize in a wide range of construction services, including:
-          </p>
-          
+          <h2 className="text-2xl font-semibold mt-12 mb-6">Our Services</h2>
+
+          <p className="text-gray-600 mb-6">We specialize in:</p>
+
           <ul className="list-disc pl-6 text-gray-600 space-y-2 mb-6">
-            <li>Commercial Construction</li>
-            <li>Residential Development</li>
-            <li>Historical Building Renovation</li>
-            <li>Sustainable Building Solutions</li>
-            <li>Interior Fit-outs</li>
-            <li>Project Management</li>
+            <li>Home Renovations</li>
+            <li>Kitchen and Bathroom Remodels</li>
+            <li>General Handywork</li>
+            <li>Repairs and Maintenance</li>
+            <li>Painting and Decorating</li>
+            <li>Flooring Installation</li>
           </ul>
+
+          <div className="mt-8 text-center">
+            <Link
+              to="/contact"
+              className="text-theme hover:text-theme-dark font-semibold underline transition-colors duration-300"
+            >
+              Contact us for a free estimate on your project
+            </Link>
+          </div>
         </div>
       </div>
     </div>

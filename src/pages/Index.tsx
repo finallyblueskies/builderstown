@@ -1,18 +1,32 @@
 import { ReviewItem } from "@/components/ReviewItem";
 import { ProjectsCarousel } from "@/components/ProjectsCarousel";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { setPageTitle } from "@/utils/title";
 import reviews from "../data/reviews.json";
 
 const Index = () => {
+  useEffect(() => {
+    setPageTitle("Home");
+  }, []);
+
   return (
     <div className="space-y-20">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gray-900 py-10">
+      <section
+        className="relative min-h-[70vh] flex items-center justify-center bg-gray-900 py-10"
+        style={{
+          backgroundImage:
+            "url(https://images.pexels.com/photos/220887/pexels-photo-220887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://source.unsplash.com/photo-1433832597046-4f10e10ac764)`,
-            filter: "brightness(0.4)",
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            backdropFilter: "blur(3px)",
           }}
         />
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-4">
@@ -69,9 +83,14 @@ const Index = () => {
         </div>
         <div className="space-y-8">
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {reviews.reviews.slice(0, 9).map((review) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
+              {reviews.reviews.slice(0, 3).map((review) => (
                 <ReviewItem key={review.id} {...review} />
+              ))}
+              {reviews.reviews.slice(3, 9).map((review) => (
+                <div key={review.id} className="hidden md:block">
+                  <ReviewItem {...review} />
+                </div>
               ))}
             </div>
             <div className="z-20 absolute -bottom-2 left-0 right-0 h-32 pointer-events-none bg-gradient-to-t from-gray-50 to-transparent lg:h-[200px]" />
@@ -107,12 +126,14 @@ const Index = () => {
           <p className="mb-8 text-gray-300">
             Contact us today to discuss your construction needs
           </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-theme hover:bg-theme-dark text-white px-8 py-3 rounded-lg transition-colors duration-200"
-          >
-            Get in Touch
-          </Link>
+          <div className="space-y-4">
+            <Link
+              to="/contact"
+              className="inline-block bg-theme hover:bg-theme-dark text-white px-8 py-3 rounded-lg transition-colors duration-200"
+            >
+              Get Your Free Estimate Today
+            </Link>
+          </div>
         </div>
       </section>
     </div>

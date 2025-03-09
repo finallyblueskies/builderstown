@@ -1,41 +1,269 @@
-
 {
   "projects": [
     {
       "id": 1,
-      "title": "Modern Office Complex",
-      "description": "A state-of-the-art office complex featuring sustainable design elements and smart building technology.",
-      "image": "photo-1487958449943-2429e8be8625",
-      "location": "Central London",
-      "completionDate": "2023",
-      "category": "Commercial"
+      "title": "Home renovation in Hillingdon",
+      "description": "Complete transformation of a traditional home in Hillingdon featuring modern interior design, open-plan living spaces, updated kitchen with premium appliances, and energy-efficient windows. This comprehensive renovation included structural improvements, electrical rewiring, and custom cabinetry throughout.",
+      "location": "Hillingdon, London",
+      "completionDate": "2025",
+      "category": "Residential",
+      "mainAsset": {
+        "path": "/projects/Uxbridge home renovation/18.JPEG"
+      },
+      "assets": [
+        {
+          "path": "/projects/Uxbridge home renovation/1.jpg",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/2.jpg",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/3.jpg",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/4.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/5.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/6.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/7.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/8.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/9.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/10.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/11.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/12.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/13.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/14.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/15.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/16.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/17.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge home renovation/18.JPEG",
+          "type": "img",
+          "status": "after"
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "Heritage Home Restoration",
-      "description": "Careful restoration of a Victorian townhouse, preserving historical features while incorporating modern amenities.",
-      "image": "photo-1433832597046-4f10e10ac764",
-      "location": "Kensington",
-      "completionDate": "2023",
-      "category": "Residential"
+      "title": "Floor sanding in Rotherhithe",
+      "description": "Professional floor restoration project in Rotherhithe featuring hardwood floor sanding and sealing. This project revitalized original wooden flooring in a period property, enhancing the natural grain while providing a durable, long-lasting finish that complements the home's character.",
+      "location": "Rotherhithe, London",
+      "completionDate": "2024",
+      "category": "Residential",
+      "mainAsset": {
+        "path": "/projects/Redecoration and Sanding floor in Surrey Quays/3.JPEG"
+      },
+      "assets": [
+        {
+          "path": "/projects/Redecoration and Sanding floor in Surrey Quays/1.jpg",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Redecoration and Sanding floor in Surrey Quays/2.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Redecoration and Sanding floor in Surrey Quays/3.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Redecoration and Sanding floor in Surrey Quays/4.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Redecoration and Sanding floor in Surrey Quays/5.JPEG",
+          "type": "img",
+          "status": "after"
+        }
+      ]
     },
     {
       "id": 3,
-      "title": "Luxury Apartment Building",
-      "description": "Modern apartment complex with premium finishes and sustainable features.",
-      "image": "photo-1496307653780-42ee777d4833",
-      "location": "Canary Wharf",
-      "completionDate": "2022",
-      "category": "Residential"
+      "title": "Custom decking in Canada Water",
+      "description": "Small decking installation in Canada Water designed to provide a practical walking surface over stone. This simple yet functional project created a smooth pathway in the garden area with non-slip surfaces for safe access.",
+      "location": "Canada Water, London",
+      "completionDate": "2024",
+      "category": "Residential",
+      "mainAsset": {
+        "path": "/projects/Decking in Surrey Quays/3.JPG"
+      },
+      "assets": [
+        {
+          "path": "/projects/Decking in Surrey Quays/1.JPG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Decking in Surrey Quays/2.JPG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Decking in Surrey Quays/3.JPG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Decking in Surrey Quays/4.JPG",
+          "type": "img",
+          "status": "after"
+        }
+      ]
     },
     {
       "id": 4,
-      "title": "Sustainable Office Renovation",
-      "description": "Complete renovation of an existing office building with focus on energy efficiency and modern workspace design.",
-      "image": "photo-1487058792275-0ad4aaf24ca7",
-      "location": "City of London",
-      "completionDate": "2023",
-      "category": "Commercial"
+      "title": "Ickenham paving installation",
+      "description": "Comprehensive paving project in Ickenham featuring premium block paving for a front driveway and garden pathways. This installation included proper drainage solutions, weed-resistant membrane, and decorative edging to create a durable, low-maintenance surface with excellent curb appeal.",
+      "location": "Ickenham, London",
+      "completionDate": "2024",
+      "category": "Residential",
+      "mainAsset": {
+        "path": "/projects/Uxbridge paving/7.JPEG"
+      },
+      "assets": [
+        {
+          "path": "/projects/Uxbridge paving/1.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge paving/2.jpg",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Uxbridge paving/3.JPEG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Uxbridge paving/4.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge paving/5.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Uxbridge paving/6.JPEG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Uxbridge paving/7.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge paving/8.JPEG",
+          "type": "img",
+          "status": "after"
+        },
+        {
+          "path": "/projects/Uxbridge paving/9.JPEG",
+          "type": "img",
+          "status": "after"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Garden shed in Walworth",
+      "description": "Custom-built garden shed in Walworth specifically designed to conceal air conditioning units while complementing the property's aesthetic. This practical structure features treated timber construction and proper ventilation, effectively hiding mechanical equipment while maintaining easy access for maintenance.",
+      "location": "Walworth, London",
+      "completionDate": "2024",
+      "category": "Residential",
+      "mainAsset": {
+        "path": "/projects/Shed in Elphant & Castle/4.JPEG"
+      },
+      "assets": [
+        {
+          "path": "/projects/Shed in Elphant & Castle/1.JPEG",
+          "type": "img",
+          "status": "before"
+        },
+        {
+          "path": "/projects/Shed in Elphant & Castle/2.JPEG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Shed in Elphant & Castle/3.JPEG",
+          "type": "img",
+          "status": "progress"
+        },
+        {
+          "path": "/projects/Shed in Elphant & Castle/4.JPEG",
+          "type": "img",
+          "status": "after"
+        }
+      ]
     }
   ]
 }
