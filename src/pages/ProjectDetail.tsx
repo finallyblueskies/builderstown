@@ -64,7 +64,7 @@ export const ProjectDetail = () => {
   };
 
   return (
-    <>
+    <div key={project.id}>
       <div className="top-0 left-0 w-full sticky z-50 bg-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
           <div className="flex items-center justify-between">
@@ -303,7 +303,7 @@ export const ProjectDetail = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
