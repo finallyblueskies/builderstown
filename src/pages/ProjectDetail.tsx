@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import projectsData from "../data/projects.json";
@@ -30,13 +30,20 @@ export const ProjectDetail = () => {
   const [currentAssetIndex, setCurrentAssetIndex] = useState(0);
   const project = projects.projects.find((p) => p.id === Number(id));
   const projectIndex = projects.projects.findIndex((p) => p.id === Number(id));
-  const nextProject = projects.projects[(projectIndex + 1) % projects.projects.length];
+  const nextProject =
+    projects.projects[(projectIndex + 1) % projects.projects.length];
+  const resetTransformRef = useRef<() => void>();
 
   useEffect(() => {
     if (project) {
       setPageTitle(project.title);
     }
   }, [project]);
+
+  useEffect(() => {
+    // Reset zoom when changing images
+    resetTransformRef.current?.();
+  }, [currentAssetIndex]);
 
   if (!project) {
     return <Navigate to="/projects" />;
@@ -59,15 +66,15 @@ export const ProjectDetail = () => {
   return (
     <>
       <div className="top-0 left-0 w-full sticky z-50 bg-gray-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
           <div className="flex items-center justify-between">
-            <Button variant="link" asChild>
+            <Button variant="link" asChild className="text-md">
               <Link to="/projects">
                 <ChevronLeft />
                 Back to Projects
               </Link>
             </Button>
-            <Button variant="link" asChild>
+            <Button variant="link" asChild className="text-md">
               <Link to={`/projects/${nextProject.id}`}>
                 Next Project
                 <ChevronRight className="ml-1" />
@@ -76,12 +83,13 @@ export const ProjectDetail = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-20 relative z-10">
         <h1 className="text-4xl font-bold mb-8">{project.title}</h1>
 
         <div className="space-y-8">
           {/* Main Image/Video Display */}
           <div className="relative bg-gray-900 rounded-lg overflow-hidden">
+            <div className="inset-0 absolute md:hidden z-40" />
             {currentAsset.type === "img" ? (
               <TransformWrapper
                 initialScale={1}
@@ -94,7 +102,7 @@ export const ProjectDetail = () => {
               >
                 {({ zoomIn, zoomOut, resetTransform }) => (
                   <>
-                    <div className="absolute top-4 right-4 z-10 flex gap-2">
+                    <div className="absolute top-4 right-4 z-50 flex gap-2">
                       <div
                         className={(() => {
                           const baseClasses =
@@ -196,6 +204,11 @@ export const ProjectDetail = () => {
                         className="w-full h-full object-contain"
                       />
                     </TransformComponent>
+                    {/* Store resetTransform function in ref for use in useEffect */}
+                    {(() => {
+                      resetTransformRef.current = resetTransform;
+                      return null;
+                    })()}
                   </>
                 )}
               </TransformWrapper>
@@ -211,14 +224,14 @@ export const ProjectDetail = () => {
               <>
                 <button
                   onClick={prevAsset}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 hover:bg-white transition-colors"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 hover:bg-white transition-colors z-50"
                   aria-label="Previous image"
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
                 <button
                   onClick={nextAsset}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 hover:bg-white transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 hover:bg-white transition-colors z-50"
                   aria-label="Next image"
                 >
                   <ChevronRight className="w-6 h-6" />

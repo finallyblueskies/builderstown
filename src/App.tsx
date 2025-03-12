@@ -19,8 +19,10 @@ import Testimonials from "./pages/Testimonials";
 import NotFound from "./pages/NotFound";
 import ProjectDetail from "./pages/ProjectDetail";
 import { useEffect } from "react";
+
 import LogRocket from "logrocket";
 LogRocket.init("8f2dud/builderstown");
+
 const queryClient = new QueryClient();
 
 // Scroll management component
