@@ -27,7 +27,7 @@ const Testimonials = () => {
         <h1 className="text-4xl font-bold">Client Testimonials</h1>
 
         <p className="text-gray-600">
-          Real reviews from{" "}
+          Real 5 star reviews from{" "}
           <a
             className="text-theme underline"
             href="https://www.mybuilder.com/profile/builderstown"

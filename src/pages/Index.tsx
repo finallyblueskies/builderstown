@@ -64,7 +64,7 @@ const Index = () => {
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl font-bold">What Our Clients Say</h2>
           <p className="text-gray-600">
-            Real reviews from{" "}
+            Real 5 star reviews from{" "}
             <a
               className="text-theme underline"
               href="https://www.mybuilder.com/profile/builderstown"
