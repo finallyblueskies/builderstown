@@ -31,7 +31,7 @@ const Index = () => {
         />
         <div className="relative text-center text-white space-y-6 max-w-4xl mx-4">
           <h1 className="text-5xl font-bold">
-            Trusted London Handymen Since 2003
+            Trusted London Builders Since 2003
           </h1>
           <p className="text-xl max-w-2xl mx-auto leading-loose">
             Serving London two decades of quality in home repairs and
